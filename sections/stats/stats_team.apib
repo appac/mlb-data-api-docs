@@ -1,0 +1,195 @@
+## Season Hitting Stats [/named.sport_hitting_tm.bam?league_list_id={league_list_id}&game_type={game_type}&season={season}&player_id={player_id}]
+### Season Hitting Stats [GET]
+
+Retrieve a players hitting stats for a given season.
+
++ Parameters
+    + league_list_id: 'mlb' (string, required)
+    + game_type: 'R' (string, required) - The type of games you want career stats for.
+        - `'R'` - Regular Season
+        - `'S'` - Spring Training
+        - `'E'` - Exhibition
+        - `'A'` - All Star Game
+        - `'D'` - Division Series
+        - `'F'` - First Round (Wild Card)
+        - `'L'` - League Championship
+        - `'W'` - World Series
+    + season: '2017' (string, required) - The season for which you want the stats.
+    + player_id: '493316' (string, required) - The ID of the player.
+
++ Response 200 (application/json)
+
+        {
+            "sport_hitting_tm": {
+                "copyRight": " Copyright 2017 MLB Advanced Media, L.P.  Use of any content on this page acknowledges agreement to the terms posted here http://gdx.mlb.com/components/copyright.txt  ",
+                "queryResults": {
+                    "created": "2017-12-12T02:51:36",
+                    "totalSize": "1",
+                    "row": {
+                        "gidp": "7",
+                        "sac": "0",
+                        "np": "1317",
+                        "sport_code": "mlb",
+                        "hgnd": "30",
+                        "tb": "157",
+                        "gidp_opp": "57",
+                        "sport_id": "1",
+                        "bb": "26",
+                        "avg": ".292",
+                        "slg": ".540",
+                        "team_full": "New York Mets",
+                        "ops": ".892",
+                        "hbp": "2",
+                        "league_full": "National League",
+                        "team_abbrev": "NYM",
+                        "so": "61",
+                        "hfly": "23",
+                        "wo": "0",
+                        "league_id": "104",
+                        "sf": "2",
+                        "team_seq": "1",
+                        "league": "NL",
+                        "hpop": "0",
+                        "cs": "1",
+                        "season": "2017",
+                        "sb": "0",
+                        "go_ao": "0.60",
+                        "ppa": "4.10",
+                        "player_id": "493316",
+                        "ibb": "5",
+                        "team_id": "121",
+                        "roe": "1",
+                        "go": "58",
+                        "hr": "17",
+                        "rbi": "42",
+                        "babip": ".316",
+                        "lob": "120",
+                        "end_date": "2017-12-12T00:00:00",
+                        "xbh": "36",
+                        "league_short": "National",
+                        "g": "81",
+                        "d": "17",
+                        "sport": "MLB",
+                        "team_short": "NY Mets",
+                        "tpa": "321",
+                        "h": "85",
+                        "obp": ".352",
+                        "hldr": "32",
+                        "t": "2",
+                        "ao": "96",
+                        "r": "46",
+                        "ab": "291"
+                    }
+                }
+            }
+        }
+
+## Season Pitching Stats [/named.sport_pitching_tm.bam?league_list_id={league_list_id}&game_type={game_type}&season={season}&player_id={player_id}]
+### Season Pitching Stats [GET]
+
+Retrieve a players pitching stats for a given season.
+
++ Parameters
+    + league_list_id: 'mlb' (string, required)
+    + game_type: 'R' (string, required) - The type of games you want career stats for.
+        - `'R'` - Regular Season
+        - `'S'` - Spring Training
+        - `'E'` - Exhibition
+        - `'A'` - All Star Game
+        - `'D'` - Division Series
+        - `'F'` - First Round (Wild Card)
+        - `'L'` - League Championship
+        - `'W'` - World Series
+    + season: '2017' (string, required) - The season for which you want the stats.
+    + player_id: '592789' (string, required) - The ID of the player.
+
++ Response 200 (application/json)
+
+        {
+            "sport_pitching_tm": {
+                "copyRight": " Copyright 2017 MLB Advanced Media, L.P.  Use of any content on this page acknowledges agreement to the terms posted here http://gdx.mlb.com/components/copyright.txt  ",
+                "queryResults": {
+                    "created": "2017-12-12T02:52:25",
+                    "totalSize": "1",
+                    "row": {
+                        "gidp": "1",
+                        "h9": "8.60",
+                        "np": "459",
+                        "tr": "1",
+                        "gf": "0",
+                        "sport_code": "mlb",
+                        "bqs": "0",
+                        "hgnd": "14",
+                        "sho": "0",
+                        "bq": "0",
+                        "gidp_opp": "15",
+                        "bk": "0",
+                        "kbb": "11.33",
+                        "sport_id": "1",
+                        "hr9": "0.00",
+                        "sv": "0",
+                        "slg": ".305",
+                        "bb": "3",
+                        "whip": "1.05",
+                        "avg": ".246",
+                        "ops": ".573",
+                        "team_full": "New York Mets",
+                        "db": "5",
+                        "league_full": "National League",
+                        "team_abbrev": "NYM",
+                        "hfly": "1",
+                        "so": "34",
+                        "tbf": "124",
+                        "bb9": "0.89",
+                        "league_id": "104",
+                        "wp": "3",
+                        "team_seq": "1",
+                        "hpop": "0",
+                        "league": "NL",
+                        "hb": "1",
+                        "cs": "2",
+                        "pgs": "65.6",
+                        "season": "2017",
+                        "sb": "2",
+                        "go_ao": "1.85",
+                        "ppa": "3.70",
+                        "cg": "0",
+                        "player_id": "592789",
+                        "gs": "7",
+                        "ibb": "1",
+                        "team_id": "121",
+                        "pk": "0",
+                        "go": "37",
+                        "hr": "0",
+                        "irs": "0",
+                        "wpct": ".333",
+                        "era": "2.97",
+                        "babip": ".341",
+                        "end_date": "2017-12-12T00:00:00",
+                        "rs9": "3.86",
+                        "qs": "4",
+                        "league_short": "National",
+                        "g": "7",
+                        "ir": "0",
+                        "hld": "0",
+                        "k9": "10.09",
+                        "sport": "MLB",
+                        "team_short": "NY Mets",
+                        "l": "2",
+                        "svo": "0",
+                        "h": "29",
+                        "ip": "30.1",
+                        "obp": ".268",
+                        "w": "1",
+                        "hldr": "14",
+                        "ao": "20",
+                        "s": "308",
+                        "r": "14",
+                        "spct": "67.1",
+                        "pip": "15.1",
+                        "ab": "118",
+                        "er": "10"
+                    }
+                }
+            }
+        }

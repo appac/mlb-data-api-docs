@@ -1,0 +1,178 @@
+## League Hitting Stats [/named.sport_career_hitting_lg.bam?league_list_id={league_list_id}&game_type={game_type}&player_id={player_id}]
+### League Hitting Stats [GET]
+
+Retrieve a players career hitting stats for a given game type split by the league.
+
++ Parameters
+    + league_list_id: 'mlb' (string, required)
+    + game_type: 'R' (string, required) - The type of games you want career stats for.
+        - `'R'` - Regular Season
+        - `'S'` - Spring Training
+        - `'E'` - Exhibition
+        - `'A'` - All Star Game
+        - `'D'` - Division Series
+        - `'F'` - First Round (Wild Card)
+        - `'L'` - League Championship
+        - `'W'` - World Series
+    + player_id: '493316' (string, required) - The ID of the player.
+
++ Response 200 (application/json)
+
+        {
+            "sport_career_hitting_lg": {
+                "copyRight": " Copyright 2017 MLB Advanced Media, L.P.  Use of any content on this page acknowledges agreement to the terms posted here http://gdx.mlb.com/components/copyright.txt  ",
+                "queryResults": {
+                    "created": "2017-12-12T03:15:43",
+                    "totalSize": "2",
+                    "row": [
+                        {
+                            "hr": "89",
+                            "gidp": "39",
+                            "sac": "0",
+                            "team_count": "3",
+                            "sport_code": "mlb",
+                            "rbi": "323",
+                            "tb": "954",
+                            "sport_id": "1",
+                            "bb": "134",
+                            "avg": ".269",
+                            "slg": ".473",
+                            "league_short": "American",
+                            "ops": ".790",
+                            "hbp": "16",
+                            "g": "518",
+                            "league_full": "American League",
+                            "d": "110",
+                            "so": "454",
+                            "league_id": "103",
+                            "sport": "MLB",
+                            "sf": "17",
+                            "league": "AL",
+                            "h": "543",
+                            "cs": "17",
+                            "obp": ".317",
+                            "t": "17",
+                            "ao": "603",
+                            "r": "295",
+                            "go_ao": "0.79",
+                            "sb": "33",
+                            "player_id": "493316",
+                            "ab": "2019",
+                            "ibb": "15",
+                            "go": "475"
+                        },
+                        {
+                            "hr": "65",
+                            "gidp": "26",
+                            "sac": "0",
+                            "team_count": "1",
+                            "sport_code": "mlb",
+                            "rbi": "172",
+                            "tb": "550",
+                            "sport_id": "1",
+                            "bb": "91",
+                            "avg": ".285",
+                            "slg": ".550",
+                            "league_short": "National",
+                            "ops": ".900",
+                            "hbp": "13",
+                            "g": "270",
+                            "league_full": "National League",
+                            "d": "56",
+                            "so": "223",
+                            "league_id": "104",
+                            "sport": "MLB",
+                            "sf": "9",
+                            "league": "NL",
+                            "h": "285",
+                            "cs": "3",
+                            "obp": ".350",
+                            "t": "7",
+                            "ao": "291",
+                            "r": "157",
+                            "go_ao": "0.81",
+                            "sb": "7",
+                            "player_id": "493316",
+                            "ab": "1000",
+                            "ibb": "16",
+                            "go": "236"
+                        }
+                    ]
+                }
+            }
+        }
+
+## League Pitching Stats [/named.sport_career_pitching_lg.bam?league_list_id={league_list_id}&game_type={game_type}&player_id={player_id}]
+### League Pitching Stats [GET]
+
+Retrieve a players career hitting stats for a given game type, split by league.
+
+The response example below is for a player who's only ever played in one league.
+
++ Parameters
+    + league_list_id: 'mlb' (string, required)
+    + game_type: 'R' (string, required) - The type of games you want career stats for.
+        - `'R'` - Regular Season
+        - `'S'` - Spring Training
+        - `'E'` - Exhibition
+        - `'A'` - All Star Game
+        - `'D'` - Division Series
+        - `'F'` - First Round (Wild Card)
+        - `'L'` - League Championship
+        - `'W'` - World Series
+    + player_id: '592789' (string, required) - The ID of the player.
+
++ Response 200 (application/json)
+
+        {
+            "sport_career_pitching_lg": {
+                "copyRight": " Copyright 2017 MLB Advanced Media, L.P.  Use of any content on this page acknowledges agreement to the terms posted here http://gdx.mlb.com/components/copyright.txt  ",
+                "queryResults": {
+                    "created": "2017-12-12T03:18:05",
+                    "totalSize": "1",
+                    "row": {
+                        "hr": "30",
+                        "gidp": "24",
+                        "irs": "0",
+                        "np": "5774",
+                        "team_count": "1",
+                        "era": "2.89",
+                        "sport_code": "mlb",
+                        "sho": "0",
+                        "bk": "1",
+                        "sport_id": "1",
+                        "sv": "0",
+                        "avg": ".236",
+                        "whip": "1.10",
+                        "bb": "77",
+                        "league_short": "National",
+                        "ir": "0",
+                        "g": "62",
+                        "league_full": "National League",
+                        "so": "418",
+                        "tbf": "1471",
+                        "wp": "19",
+                        "league_id": "104",
+                        "sport": "MLB",
+                        "l": "18",
+                        "league": "NL",
+                        "svo": "0",
+                        "hb": "6",
+                        "h": "323",
+                        "ip": "364.0",
+                        "w": "24",
+                        "s": "3852",
+                        "ao": "275",
+                        "r": "135",
+                        "go_ao": "1.35",
+                        "cg": "0",
+                        "player_id": "592789",
+                        "ab": "1371",
+                        "gs": "61",
+                        "ibb": "5",
+                        "er": "117",
+                        "go": "372"
+                    }
+                }
+            }
+        }

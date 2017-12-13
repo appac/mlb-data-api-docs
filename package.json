@@ -1,0 +1,9 @@
+{
+  "name": "mlb-lookup-routes",
+  "version": "1.0.0",
+  "description": "MLB lookup routes documentation. Built with API Blueprint.",
+  "main": "index.js",
+  "author": "Chris Apparicio <chris@apparicio.me>",
+  "license": "MIT",
+  "private": false
+}

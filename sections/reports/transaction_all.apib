@@ -1,0 +1,53 @@
+## Transactions [/lookup/json/named.transaction_all.bam?sport_code={sport_code}&start_date={start_date}&end_date={end_date}]
+### Get Transactions Over Period [GET]
+
+Retrieve all transactions between a given period.
+
+:::note
+`start_date` and `end_date` parameters should be in the `YYYYMMDD` format.
+:::
+
++ Parameters
+    + sport_code: 'mlb' (string, required)
+    + start_date: '20171201' (string, required) - Start date of time period.
+    + end_date: '20171231' (string, required) - End date of time period.
+
++ Response 200 (application/json)
+
+        {
+            "transaction_all": {
+                "copyRight": " Copyright 2017 MLB Advanced Media, L.P.  Use of any content on this page acknowledges agreement to the terms posted here http://gdx.mlb.com/components/copyright.txt  ",
+                "queryResults": {
+                    "created": "2017-12-13T16:55:03",
+                    "totalSize": "103",
+                    "row": [
+                        {
+                            "trans_date_cd": "D",
+                            "from_team_id": "138",
+                            "orig_asset": "Player",
+                            "final_asset_type": "",
+                            "player": "Aledmys Diaz",
+                            "resolution_cd": "",
+                            "final_asset": "",
+                            "name_display_first_last": "Aledmys Diaz",
+                            "type_cd": "TR",
+                            "name_sort": "DIAZ, ALEDMYS",
+                            "resolution_date": "",
+                            "conditional_sw": "N",
+                            "team": "Toronto Blue Jays",
+                            "type": "Trade",
+                            "name_display_last_first": "Diaz, Aledmys",
+                            "transaction_id": "338110",
+                            "trans_date": "2017-12-01T00:00:00",
+                            "effective_date": "2017-12-01T00:00:00",
+                            "player_id": "649557",
+                            "orig_asset_type": "PL",
+                            "from_team": "St. Louis Cardinals",
+                            "team_id": "141",
+                            "note": "St. Louis Cardinals traded SS Aledmys Diaz to Toronto Blue Jays for CF J.B. Woodman."
+                        },
+                        ...
+                    ]
+                }
+            }
+        }

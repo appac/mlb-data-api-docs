@@ -1,5 +1,7 @@
-## Player Search [/named.search_player_all.bam?sport_code={sport_code}&active_sw={active_sw}&name_part={name_part}]
+## Player Search [/lookup/json/named.search_player_all.bam?sport_code={sport_code}&active_sw={active_sw}&name_part={name_part}]
 ### Search For Player(s) [GET]
+
+Search for active and historic/inactive players by name.
 
 The `active_sw` parameter should be set depending on whether you want to search for active or inactive players. You *can* omit this parameter, though you will notice a slower response time as the search is done across all (active and inactive) players.
 

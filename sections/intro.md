@@ -2,7 +2,7 @@ Documentation for MLB's public `lookup/json/named` endpoints. These endpoints co
 
 ## How The Endpoints Work
 
-All endpoints use a base url of `http://mlb.mlb.com/lookup/json`, with a `/named.[endpoint].bam` appended to denote the specific endpoint you want to access.
+All endpoints use a base url of `http://mlb.mlb.com`, with a `/lookup/json/named.[endpoint].bam` path to denote the specific endpoint you want to access.
 
 For example the `search_player_all` endpoint looks like this:
 

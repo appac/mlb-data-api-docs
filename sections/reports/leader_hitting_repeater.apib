@@ -1,0 +1,67 @@
+## Hitting Leaders [/lookup/json/named.leader_hitting_repeater.bam?sport_code={sport_code}&results={results}&game_type={game_type}&season={season}&sort_column={sort_column}&leader_hitting_repeater.col_in={leader_hitting_repeater.col_in}]
+### Get Hitting Leaders [GET]
+
+Retrieve *n* leaders for a given hitting statistic.
+
+:::note
+This endpoint is best used alongside col_in/col_ex to prune response data. Without, it returns entire player objects including complete stats and other data that would likely be unused if you're simply looking to get a list of leaders for a given statistic.
+
+For best results, include the player's name, id, and the stat as a starting point.
+
+See: [Using col_in & col_ex](#header-getting-started) 
+:::
+
++ Parameters
+    + sport_code: 'mlb' (string, required)
+    + results: 5 (string | number, required) - The number of results to return.
+    + game_type: 'R' (string, required) - The type of games you want career stats for.
+        - `'R'` - Regular Season
+        - `'S'` - Spring Training
+        - `'E'` - Exhibition
+        - `'A'` - All Star Game
+        - `'D'` - Division Series
+        - `'F'` - First Round (Wild Card)
+        - `'L'` - League Championship
+        - `'W'` - World Series
+    + season: '2017' (string, required) - The season for which you want the stats.
+    + sort_column: 'ab' (string, required) - The statistic you want leaders for.
+    + leader_hitting_repeater.col_in: ab (string, optional)
+
++ Response 200 (application/json)
+
+        {
+            "leader_hitting_repeater": {
+                "copyRight": " Copyright 2017 MLB Advanced Media, L.P.  Use of any content on this page acknowledges agreement to the terms posted here http://gdx.mlb.com/components/copyright.txt  ",
+                "leader_hitting_mux": {
+                    "sort_column": "'ab'",
+                    "queryResults": {
+                        "created": "2017-12-13T18:25:07",
+                        "totalSize": "5",
+                        "row": [
+                            {
+                                "name_display_first_last": "Ender Inciarte",
+                                "ab": "662"
+                            },
+                            {
+                                "name_display_first_last": "Dee Gordon",
+                                "ab": "653"
+                            },
+                            {
+                                "name_display_first_last": "Francisco Lindor",
+                                "ab": "651"
+                            },
+                            {
+                                "name_display_first_last": "Charlie Blackmon",
+                                "ab": "644"
+                            },
+                            {
+                                "name_display_first_last": "Elvis Andrus",
+                                "ab": "643"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+
+

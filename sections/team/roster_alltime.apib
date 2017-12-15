@@ -1,0 +1,57 @@
+## All Time Roster [/lookup/json/named.roster_team_alltime.bam?start_season={start_season}&end_season={end_season}&team_id={team_id}]
+## Get Roster By Seasons [GET]
+Retrieve a teams roster between a given start and end season. 
+
+::: note
+Enter the same season for `start_season` and `end_season` to get the roster for that single season.
+:::
+
+:::note
+This endpoint is best used alongside col_in/col_ex to prune response data. Without, it returns entire player objects.
+
+See: [Using col_in & col_ex](#header-getting-started) 
+:::
+
++ Parameters
+    + start_season: '2016'
+    + end_season: '2017'
+    + team_id: '121'
+
++ Response 200 (application/json)
+
+        {
+            "roster_team_alltime": {
+                "copyRight": " Copyright 2017 MLB Advanced Media, L.P.  Use of any content on this page acknowledges agreement to the terms posted here http://gdx.mlb.com/components/copyright.txt  ",
+                "queryResults": {
+                    "created": "2017-12-15T02:18:23",
+                    "totalSize": "64",
+                    "row": [
+                        {
+                            "name_first_last": "Norichika Aoki",
+                            "weight": "180",
+                            "primary_position": "OF",
+                            "birth_date": "1982-01-05T00:00:00",
+                            "throws": "R",
+                            "stat_years": "2017",
+                            "height_inches": "9",
+                            "name_sort": "AOKI, NORICHIKA",
+                            "status_short": "Active",
+                            "jersey_number": "11",
+                            "player_first_last_html": "Norichika Aoki",
+                            "bats": "L",
+                            "position_desig": "OUTFIELDER",
+                            "forty_man_sw": "Y",
+                            "player_html": "Aoki, Norichika",
+                            "height_feet": "5",
+                            "player_id": "493114",
+                            "name_last_first": "Aoki, Norichika",
+                            "current_sw": "N",
+                            "team_id": "121",
+                            "roster_years": "2017",
+                            "active_sw": "Y"
+                        },
+                        ...
+                    ]
+                }
+            }
+        }

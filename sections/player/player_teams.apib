@@ -1,0 +1,103 @@
+## Player Teams [/lookup/json/named.player_teams.bam?season={season}&player_id={player_id}]
+### Get Teams Played For [GET]
+
+Retrieve the teams a player has played for over the course of a season, or their career.
+
+::: note
+Omitting the `season` parameter will retrieve all teams the player has played for since the start of their career.
+:::
+
++ Parameters
+    + season: '2014' (string, optional)
+    + player_id: '493316' (string, required)
++ Response 200 (application/json)
+
+        {
+            "player_teams": {
+                "copyRight": " Copyright 2017 MLB Advanced Media, L.P.  Use of any content on this page acknowledges agreement to the terms posted here http://gdx.mlb.com/components/copyright.txt  ",
+                "queryResults": {
+                    "created": "2017-12-12T01:43:07",
+                    "totalSize": "2",
+                    "row": [
+                        {
+                            "season_state": "offseason",
+                            "hitting_season": "2014",
+                            "sport_full": "Major League Baseball",
+                            "org": "Red Sox",
+                            "sport_code": "mlb",
+                            "org_short": "Boston",
+                            "jersey_number": "52",
+                            "end_date": "2014-12-09T00:00:00",
+                            "team_brief": "Red Sox",
+                            "forty_man_sw": "Y",
+                            "sport_id": "1",
+                            "league_short": "American",
+                            "org_full": "Boston Red Sox",
+                            "status_code": "A",
+                            "league_full": "American League",
+                            "primary_position": "LF",
+                            "team_abbrev": "BOS",
+                            "status": "Active",
+                            "org_abbrev": "BOS",
+                            "league_id": "103",
+                            "class": "MLB",
+                            "sport": "MLB",
+                            "team_short": "Boston",
+                            "team": "Boston Red Sox",
+                            "league": "AL",
+                            "fielding_season": "2014",
+                            "org_id": "111",
+                            "class_id": "1",
+                            "league_season": "2014",
+                            "pitching_season": "",
+                            "sport_short": "",
+                            "status_date": "2014-08-01T00:00:00",
+                            "player_id": "493316",
+                            "current_sw": "N",
+                            "primary_stat_type": "hitting",
+                            "team_id": "111",
+                            "start_date": "2014-07-31T00:00:00"
+                        },
+                        {
+                            "season_state": "offseason",
+                            "hitting_season": "2014",
+                            "sport_full": "Major League Baseball",
+                            "org": "Athletics",
+                            "sport_code": "mlb",
+                            "org_short": "Oakland",
+                            "jersey_number": "52",
+                            "end_date": "2014-07-30T00:00:00",
+                            "team_brief": "Athletics",
+                            "forty_man_sw": "N",
+                            "sport_id": "1",
+                            "league_short": "American",
+                            "org_full": "Oakland Athletics",
+                            "status_code": "TR",
+                            "league_full": "American League",
+                            "primary_position": "LF",
+                            "team_abbrev": "OAK",
+                            "status": "Traded",
+                            "org_abbrev": "OAK",
+                            "league_id": "103",
+                            "class": "MLB",
+                            "sport": "MLB",
+                            "team_short": "Oakland",
+                            "team": "Oakland Athletics",
+                            "league": "AL",
+                            "fielding_season": "2014",
+                            "org_id": "133",
+                            "class_id": "1",
+                            "league_season": "2014",
+                            "pitching_season": "",
+                            "sport_short": "",
+                            "status_date": "2014-07-30T00:00:00",
+                            "player_id": "493316",
+                            "current_sw": "N",
+                            "primary_stat_type": "hitting",
+                            "team_id": "133",
+                            "start_date": "2012-03-03T00:00:00"
+                        }
+                    ]
+                }
+            }
+        }

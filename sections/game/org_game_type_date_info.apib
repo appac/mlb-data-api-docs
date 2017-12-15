@@ -1,0 +1,75 @@
+## Game Type Info [/lookup/json/named.org_game_type_date_info.bam?current_sw='Y'&sport_code='mlb'game_type={game_type}&season={season}]
+### Get Info Per Game Type [GET]
+
+Retrieve a list of one or numerous game types.
+
+For example, if you wanted to know when the National League Championship Series was played, this endpoint could tell you that.
+
++ Parameters
+    + game_type: 'L' (string, required)
+        - `'R'` - Regular Season
+        - `'S'` - Spring Training
+        - `'E'` - Exhibition
+        - `'A'` - All Star Game
+        - `'D'` - Division Series
+        - `'F'` - First Round (Wild Card)
+        - `'L'` - League Championship
+        - `'W'` - World Series
+    + season: '2017' (string, required)
+
++ Response 200 (application/json)
+
+        {
+            "org_game_type_date_info": {
+                "copyRight": " Copyright 2017 MLB Advanced Media, L.P.  Use of any content on this page acknowledges agreement to the terms posted here http://gdx.mlb.com/components/copyright.txt  ",
+                "queryResults": {
+                    "created": "2017-12-15T00:41:19",
+                    "totalSize": "3",
+                    "row": [
+                        {
+                            "league_code": "",
+                            "game_type": "R",
+                            "round_robin_sw": "N",
+                            "season": "2017",
+                            "playoffs_sw": "N",
+                            "last_game_date": "2017-10-01T00:00:00",
+                            "name_short": "Season",
+                            "league_id": "",
+                            "sport_code": "mlb",
+                            "first_game_date": "2017-04-02T00:00:00",
+                            "name_full": "Regular Season",
+                            "playoff_round": ""
+                        },
+                        {
+                            "league_code": "AL",
+                            "game_type": "R",
+                            "round_robin_sw": "N",
+                            "season": "2017",
+                            "playoffs_sw": "N",
+                            "last_game_date": "2017-10-01T00:00:00",
+                            "name_short": "Season",
+                            "league_id": "103",
+                            "sport_code": "mlb",
+                            "first_game_date": "2017-04-02T00:00:00",
+                            "name_full": "Regular Season",
+                            "playoff_round": ""
+                        },
+                        {
+                            "league_code": "NL",
+                            "game_type": "R",
+                            "round_robin_sw": "N",
+                            "season": "2017",
+                            "playoffs_sw": "N",
+                            "last_game_date": "2017-10-01T00:00:00",
+                            "name_short": "Season",
+                            "league_id": "104",
+                            "sport_code": "mlb",
+                            "first_game_date": "2017-04-02T00:00:00",
+                            "name_full": "Regular Season",
+                            "playoff_round": ""
+                        }
+                    ]
+                }
+            }
+        }
+

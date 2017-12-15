@@ -1,0 +1,59 @@
+## Broadcast Info [/lookup/json/named.mlb_broadcast_info.bam?src_type='TV'&src_comment='National'&tcid=mm_mlb_schedule&sort_by={sort_by}&home_away={home_away}&start_date={start_date}&end_date={end_date}&season={season}]
+### Get Broadcasts Over Period [GET]
+
+Retrieve information on broadcasts over a given period.
+
+:::note
+`start_date` and `end_date` parameters should be in the `YYYYMMDD` format.
+:::
+
+:::note
+Although you can omit the `home_away` parameter to retrieve both home and away game data, one will include the other. For example, a New York Mets home game result will include data for the visiting team.
+:::
+
++ Parameters
+    + `sort_by`: `'game_time_et_asc'` (string, optional) - Field to sort results by.
+    + home_away: 'H' (string, optional) - 'H' for home games, 'A' for away games. Omit for both.
+    + start_date: '20170415' (string, optional)
+    + end_date: '20170417' (string, optional)
+    + season: '2017' (string, required)
+
++ Response 200 (application/json)
+
+        {
+            "mlb_broadcast_info": {
+                "copyRight": " Copyright 2017 MLB Advanced Media, L.P.  Use of any content on this page acknowledges agreement to the terms posted here http://gdx.mlb.com/components/copyright.txt  ",
+                "queryResults": {
+                    "created": "2017-12-15T01:50:44",
+                    "totalSize": "11",
+                    "row": [
+                        {
+                            "away_team_id": "138",
+                            "home_team_short": "NY Yankees",
+                            "game_time_local": "2017-04-15T13:05:00",
+                            "game_time_home": "2017-04-15T13:05:00",
+                            "source_id": "2661",
+                            "home_team_full": "New York Yankees",
+                            "game_date": "2017-04-15T00:00:00",
+                            "source_type": "TV",
+                            "foreign_language": "",
+                            "game_pk": "490267",
+                            "game_time_away": "2017-04-15T12:05:00",
+                            "game_day": "Saturday",
+                            "source_comment": "National",
+                            "source_desc": "MLBN",
+                            "away_team_abbrev": "STL",
+                            "away_team_full": "St. Louis Cardinals",
+                            "game_id": "2017/04/15/slnmlb-nyamlb-1",
+                            "home_team_abbrev": "NYY",
+                            "home_team_id": "147",
+                            "sort_order": "3",
+                            "game_time_et": "2017-04-15T13:05:00",
+                            "away_team_short": "St. Louis",
+                            "home_away": "H"
+                        },
+                        ...
+                    ]
+                }
+            }
+        }

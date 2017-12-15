@@ -1,0 +1,105 @@
+## Projected Pitching Stats [/lookup/json/named.proj_pecota_pitching.bam?season={season}&player_id={player_id}]
+### Projected Pitching Stats [GET]
+
+Retrieve a players projected pitching stats for a given season.
+
+Omitting the `season` parameter will return the actual stats for the players earliest major league season.
+
++ Parameters
+    + season: '2017' (string, optional)
+    + player_id: '592789' (string, required)
+
++ Response 200 (application/json)
+
+        {
+            "proj_pecota_pitching": {
+                "copyRight": " Copyright 2017 MLB Advanced Media, L.P.  Use of any content on this page acknowledges agreement to the terms posted here http://gdx.mlb.com/components/copyright.txt  ",
+                "queryResults": {
+                    "created": "2017-12-12T02:57:24",
+                    "totalSize": "1",
+                    "row": {
+                        "hr": "3",
+                        "player": "Syndergaard, Noah",
+                        "wpct": ".429",
+                        "era": "3.02",
+                        "bsv": "0",
+                        "outs": "179",
+                        "sho": "0",
+                        "sv": "0",
+                        "whip": "1.06",
+                        "qs": "7",
+                        "bb": "10",
+                        "g": "12",
+                        "hld": "0",
+                        "so": "69",
+                        "l": "4",
+                        "hb": "2",
+                        "svo": "0",
+                        "h": "53",
+                        "ip": "59.2",
+                        "w": "3",
+                        "r": "25",
+                        "pa": "243",
+                        "player_id": "592789",
+                        "cg": "0",
+                        "gs": "12",
+                        "ibb": "1",
+                        "er": "20"
+                    }
+                }
+            }
+        }
+
+## Projected Hitting Stats [/lookup/json/named.proj_pecota_batting.bam?season={season}&player_id={player_id}]
+### Projected Hitting Stats [GET]
+
+Retrieve a players projected hitting stats for a given season.
+
+Omitting the `season` parameter will return the actual stats for the players earliest major league season.
+
++ Parameters
+    + season: '2017' (string, optional)
+    + player_id: '493316' (string, required)
+
++ Response 200 (application/json)
+
+        {
+            "proj_pecota_batting": {
+                "copyRight": " Copyright 2017 MLB Advanced Media, L.P.  Use of any content on this page acknowledges agreement to the terms posted here http://gdx.mlb.com/components/copyright.txt  ",
+                "queryResults": {
+                    "created": "2017-12-12T03:09:35",
+                    "totalSize": "1",
+                    "row": {
+                        "hr": "17",
+                        "gidp": "7",
+                        "player": "Cespedes, Yoenis",
+                        "sac": "0",
+                        "rbi": "42",
+                        "tb": "157",
+                        "slg": ".538",
+                        "avg": ".291",
+                        "bb": "26",
+                        "ops": ".889",
+                        "hbp": "2",
+                        "g": "81",
+                        "d": "17",
+                        "e": "12",
+                        "so": "61",
+                        "sf": "2",
+                        "tpa": "322",
+                        "h": "85",
+                        "cs": "1",
+                        "obp": ".351",
+                        "t": "2",
+                        "s": "49",
+                        "r": "46",
+                        "sb": "0",
+                        "sbpct": ".000",
+                        "player_id": "493316",
+                        "ab": "292",
+                        "ibb": "5"
+                    }
+                }
+            }
+        }
+        

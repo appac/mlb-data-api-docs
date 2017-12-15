@@ -1,0 +1,66 @@
+## Pitching Leaders [/lookup/json/named.leader_pitching_repeater.bam?sport_code='mlb'&results={results}&game_type={game_type}&season={season}&sort_column={sort_column}&leader_pitching_repeater.col_in={leader_pitching_repeater.col_in}]
+### Get Pitching Leaders [GET]
+
+Retrieve *n* leaders for a given hitting statistic.
+
+:::note
+This endpoint is best used alongside col_in/col_ex to prune response data. Without, it returns entire player objects.
+
+For best results, include the player's name, id, and the stat as a starting point.
+
+See: [Using col_in & col_ex](#header-getting-started) 
+:::
+
++ Parameters
+    + results: 5 (string | number, required) - The number of results to return.
+    + game_type: 'R' (string, required) - The type of games you want career stats for.
+        - `'R'` - Regular Season
+        - `'S'` - Spring Training
+        - `'E'` - Exhibition
+        - `'A'` - All Star Game
+        - `'D'` - Division Series
+        - `'F'` - First Round (Wild Card)
+        - `'L'` - League Championship
+        - `'W'` - World Series
+    + season: '2017' (string, required)
+    + sort_column: 'era' (string, required) - The statistic you want leaders for.
+    + leader_pitching_repeater.col_in: era (string, optional)
+
++ Response 200 (application/json)
+
+        {
+            "leader_pitching_repeater": {
+                "copyRight": " Copyright 2017 MLB Advanced Media, L.P.  Use of any content on this page acknowledges agreement to the terms posted here http://gdx.mlb.com/components/copyright.txt  ",
+                "leader_pitching_mux": {
+                    "sort_column": "'era'",
+                    "queryResults": {
+                        "created": "2017-12-14T01:13:30",
+                        "totalSize": "5",
+                        "row": [
+                            {
+                                "name_display_first_last": "Corey Kluber",
+                                "era": "2.25"
+                            },
+                            {
+                                "name_display_first_last": "Clayton Kershaw",
+                                "era": "2.31"
+                            },
+                            {
+                                "name_display_first_last": "Max Scherzer",
+                                "era": "2.51"
+                            },
+                            {
+                                "name_display_first_last": "Stephen Strasburg",
+                                "era": "2.52"
+                            },
+                            {
+                                "name_display_first_last": "Robbie Ray",
+                                "era": "2.89"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+
+

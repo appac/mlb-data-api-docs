@@ -1,0 +1,170 @@
+## Career Hitting Stats [/lookup/json/named.sport_career_hitting.bam?league_list_id='mlb'&game_type={game_type}&player_id={player_id}]
+### Career Hitting Stats [GET]
+
+Retrieve a players career hitting stats for a given game type.
+
++ Parameters
+    + game_type: 'R' (string, required) - The type of games you want career stats for.
+        - `'R'` - Regular Season
+        - `'S'` - Spring Training
+        - `'E'` - Exhibition
+        - `'A'` - All Star Game
+        - `'D'` - Division Series
+        - `'F'` - First Round (Wild Card)
+        - `'L'` - League Championship
+        - `'W'` - World Series
+    + player_id: '493316' (string, required)
++ Response 200 (application/json)
+
+        {
+            "sport_career_hitting": {
+                "copyRight": " Copyright 2017 MLB Advanced Media, L.P.  Use of any content on this page acknowledges agreement to the terms posted here http://gdx.mlb.com/components/copyright.txt  ",
+                "queryResults": {
+                    "created": "2017-12-12T02:28:43",
+                    "totalSize": "1",
+                    "row": {
+                        "hr": "154",
+                        "gidp": "65",
+                        "np": "12792",
+                        "sac": "0",
+                        "team_count": "4",
+                        "sport_code": "mlb",
+                        "hgnd": "260",
+                        "rbi": "495",
+                        "lob": "1256",
+                        "babip": ".304",
+                        "gidp_opp": "518",
+                        "tb": "1504",
+                        "xbh": "344",
+                        "sport_id": "1",
+                        "bb": "225",
+                        "avg": ".274",
+                        "slg": ".498",
+                        "ops": ".826",
+                        "hbp": "29",
+                        "g": "788",
+                        "d": "166",
+                        "hfly": "158",
+                        "so": "677",
+                        "wo": "3",
+                        "sport": "MLB",
+                        "sf": "26",
+                        "hpop": "6",
+                        "tpa": "3299",
+                        "h": "828",
+                        "cs": "20",
+                        "obp": ".328",
+                        "hldr": "404",
+                        "t": "24",
+                        "ao": "894",
+                        "r": "452",
+                        "go_ao": "0.80",
+                        "sb": "40",
+                        "ppa": "3.88",
+                        "player_id": "493316",
+                        "ab": "3019",
+                        "ibb": "31",
+                        "roe": "35",
+                        "go": "711"
+                    }
+                }
+            }
+        }
+
+## Career Pitching Stats [/lookup/json/named.sport_career_pitching.bam?league_list_id='mlb'&game_type={game_type}&player_id={player_id}]
+### Career Pitching Stats [GET]
+
+Retrieve a players career hitting stats for a given game type.
+
++ Parameters
+    + game_type: 'R' (string, required) - The type of games you want career stats for.
+        - `'R'` - Regular Season
+        - `'S'` - Spring Training
+        - `'E'` - Exhibition
+        - `'A'` - All Star Game
+        - `'D'` - Division Series
+        - `'F'` - First Round (Wild Card)
+        - `'L'` - League Championship
+        - `'W'` - World Series
+    + player_id: '592789' (string, required)
+
++ Response 200 (application/json)
+
+        {
+            "sport_career_pitching": {
+                "copyRight": " Copyright 2017 MLB Advanced Media, L.P.  Use of any content on this page acknowledges agreement to the terms posted here http://gdx.mlb.com/components/copyright.txt  ",
+                "queryResults": {
+                    "created": "2017-12-12T02:32:23",
+                    "totalSize": "1",
+                    "row": {
+                        "gidp": "24",
+                        "h9": "7.99",
+                        "team_count": "1",
+                        "np": "5774",
+                        "tr": "10",
+                        "gf": "0",
+                        "sport_code": "mlb",
+                        "bqs": "5",
+                        "hgnd": "122",
+                        "sho": "0",
+                        "bq": "12",
+                        "gidp_opp": "146",
+                        "bk": "1",
+                        "kbb": "5.43",
+                        "sport_id": "1",
+                        "hr9": "0.74",
+                        "sv": "0",
+                        "slg": "1.073",
+                        "bb": "77",
+                        "whip": "1.10",
+                        "avg": ".236",
+                        "ops": "1.351",
+                        "db": "58",
+                        "so": "418",
+                        "hfly": "39",
+                        "tbf": "1471",
+                        "bb9": "1.90",
+                        "wp": "19",
+                        "hb": "6",
+                        "hpop": "0",
+                        "cs": "12",
+                        "pgs": "94.7",
+                        "go_ao": "1.35",
+                        "sb": "65",
+                        "ppa": "3.93",
+                        "player_id": "592789",
+                        "cg": "0",
+                        "ibb": "5",
+                        "gs": "61",
+                        "pk": "1",
+                        "go": "372",
+                        "hr": "30",
+                        "irs": "0",
+                        "wpct": ".571",
+                        "era": "2.89",
+                        "babip": ".315",
+                        "rs9": "4.75",
+                        "qs": "38",
+                        "g": "62",
+                        "ir": "0",
+                        "hld": "1",
+                        "k9": "10.34",
+                        "sport": "MLB",
+                        "l": "18",
+                        "svo": "0",
+                        "h": "323",
+                        "ip": "364.0",
+                        "obp": ".278",
+                        "w": "24",
+                        "hldr": "162",
+                        "ao": "275",
+                        "s": "3852",
+                        "r": "135",
+                        "spct": "66.7",
+                        "pip": "15.9",
+                        "ab": "1371",
+                        "er": "117"
+                    }
+                }
+            }
+        }

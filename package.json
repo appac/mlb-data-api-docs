@@ -1,11 +1,10 @@
 {
-  "name": "mlb-lookup-routes",
-  "version": "1.0.0",
-  "description": "MLB lookup routes documentation. Built with API Blueprint.",
+  "name": "mlb-data-api-documentation",
+  "version": "0.0.0",
+  "description": "MLB Data API documentation. Written using API Bluebrint.",
   "scripts": {
-    "build-docs": "aglio --theme-variables flatly --theme-template triple -i mlb.apib  -o mlb.html --verbose"
+    "build-docs": "aglio --theme-variables flatly --theme-template triple -i mlb.apib  -o index.html --verbose"
   },
-  "main": "index.js",
   "author": "Chris Apparicio <chris@apparicio.me>",
   "license": "MIT",
   "private": false

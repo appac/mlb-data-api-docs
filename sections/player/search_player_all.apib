@@ -1,4 +1,4 @@
-## Player Search [/lookup/json/named.search_player_all.bam?sport_code={sport_code}&active_sw={active_sw}&name_part={name_part}]
+## Player Search [/lookup/json/named.search_player_all.bam?sport_code='mlb'&active_sw={active_sw}&name_part={name_part}]
 ### Search For Player(s) [GET]
 
 Search for active and historic/inactive players by name.
@@ -10,7 +10,6 @@ If you're using a single search term i.e. using 'cespedes' instead of 'yoenis ce
 :::
 
 + Parameters
-    + sport_code: 'mlb' (string, required) - Should be 'mlb' for all requests.
     + active_sw: 'Y' (string, optional) - Set to 'Y' to search active players, and 'N' to search inactive/historic players.
     + name_part: 'cespedes%' (string, required) - The player name to search for.
 + Response 200 (application/json)

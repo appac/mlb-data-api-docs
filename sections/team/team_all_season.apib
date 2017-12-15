@@ -1,4 +1,4 @@
-## List Teams [/lookup/json/named.team_all_season.bam?sport_code={sport_code}&all_star_sw={all_star_sw}&sort_order={sort_order}&season={season}]
+## List Teams [/lookup/json/named.team_all_season.bam?sport_code='mlb'&all_star_sw={all_star_sw}&sort_order={sort_order}&season={season}]
 ### List Teams By Season [GET]
 
 Retrieve a list of major league teams that were active during a given season.
@@ -10,7 +10,6 @@ If `all_star_sw` is set to `'Y'`, you will instead receive data on the all star 
 You can sort using the `sort_order` paramater. Ex: Sort in ascending order by the name field using `sort_by='name_asc'`
 :::
 + Parameters
-    + sport_code: 'mlb' (string, required)
     + all_star_sw: 'N' (string, optional) - Set to 'Y' for all star data, and 'N' for regular season.
     + sort_order (string, optional) - Field to sort results by.
     + season: '2017' (string, required) - The season for which you want the stats.

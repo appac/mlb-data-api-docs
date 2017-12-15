@@ -1,4 +1,4 @@
-## Hitting Leaders [/lookup/json/named.leader_hitting_repeater.bam?sport_code={sport_code}&results={results}&game_type={game_type}&season={season}&sort_column={sort_column}&leader_hitting_repeater.col_in={leader_hitting_repeater.col_in}]
+## Hitting Leaders [/lookup/json/named.leader_hitting_repeater.bam?sport_code='mlb'&results={results}&game_type={game_type}&season={season}&sort_column={sort_column}&leader_hitting_repeater.col_in={leader_hitting_repeater.col_in}]
 ### Get Hitting Leaders [GET]
 
 Retrieve *n* leaders for a given hitting statistic.
@@ -12,7 +12,6 @@ See: [Using col_in & col_ex](#header-getting-started)
 :::
 
 + Parameters
-    + sport_code: 'mlb' (string, required)
     + results: 5 (string | number, required) - The number of results to return.
     + game_type: 'R' (string, required) - The type of games you want career stats for.
         - `'R'` - Regular Season

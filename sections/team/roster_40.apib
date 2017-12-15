@@ -1,0 +1,56 @@
+## 40-Man Roster [/lookup/json/named.roster_40.bam?team_id={team_id}]
+## Get 40-Man Roster [GET]
+
+Retrieve a team's 40 man roster.
+
+:::note
+This endpoint is best used alongside col_in/col_ex to prune response data. Without, it returns entire player objects.
+
+See: [Using col_in & col_ex](#header-getting-started) 
+:::
+
++ Parameters
+    + team_id: '121' (string, required)
+
++ Response 200 (application/json)
+
+        {
+            "roster_40": {
+                "copyRight": " Copyright 2017 MLB Advanced Media, L.P.  Use of any content on this page acknowledges agreement to the terms posted here http://gdx.mlb.com/components/copyright.txt  ",
+                "queryResults": {
+                    "created": "2017-12-15T02:09:22",
+                    "totalSize": "39",
+                    "row": [
+                        {
+                            "position_txt": "P",
+                            "weight": "197",
+                            "name_display_first_last": "Tyler Bashlor",
+                            "college": "South Georgia State",
+                            "height_inches": "0",
+                            "starter_sw": "N",
+                            "jersey_number": "",
+                            "end_date": "",
+                            "name_first": "Tyler",
+                            "bats": "R",
+                            "team_code": "nyn",
+                            "height_feet": "6",
+                            "pro_debut_date": "",
+                            "status_code": "A",
+                            "primary_position": "1",
+                            "birth_date": "1993-04-16T00:00:00",
+                            "team_abbrev": "NYM",
+                            "throws": "R",
+                            "team_name": "New York Mets",
+                            "name_display_last_first": "Bashlor, Tyler",
+                            "name_use": "Tyler",
+                            "player_id": "641341",
+                            "name_last": "Bashlor",
+                            "team_id": "121",
+                            "start_date": "2017-11-20T00:00:00",
+                            "name_full": "Bashlor, Tyler"
+                        },
+                        ...
+                    ]
+                }
+            }
+        }

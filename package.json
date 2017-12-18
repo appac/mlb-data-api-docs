@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "MLB Data API documentation. Written using API Bluebrint.",
   "scripts": {
-    "build-docs": "aglio --theme-variables flatly --theme-template triple -i mlb.apib  -o index.html --verbose"
+    "build-docs": "aglio --theme-variables flatly --theme-template triple -i mlb.apib  -o index.html --verbose",
+    "serve-docs": "aglio --theme-variables flatly --theme-template triple -i mlb.apib  -o index.html -s"
   },
   "author": "Chris Apparicio <chris@apparicio.me>",
   "license": "MIT",
